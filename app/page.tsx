@@ -6,7 +6,7 @@ import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import { nFormatter } from "@/lib/utils";
-import {Heading} from "@radix-ui/themes";
+import {Heading,Text} from "@radix-ui/themes";
 
 export default async function Home() {
   const { stargazers_count: stars } = await fetch(
@@ -46,15 +46,16 @@ export default async function Home() {
         >
           <Balancer>Building blocks for your Next project</Balancer>
         </Heading>
-        <p
-          className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
+        <Text
+          // size='3'
+          className="mt-6 animate-fade-up text-center opacity-0 text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
           <Balancer>
             An opinionated collection of components, hooks, and utilities for
             your Next.js project.
           </Balancer>
-        </p>
+        </Text>
         <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
           style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}

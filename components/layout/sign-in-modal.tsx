@@ -22,7 +22,7 @@ const SignInModal = ({
 
   return (
     <Modal showModal={showSignInModal} setShowModal={setShowSignInModal}>
-      <Card className="w-full overflow-hidden  md:max-w-md shadow-5">
+      <Card variant='classic' className="w-full overflow-hidden  md:max-w-md shadow-5">
         <div className="flex flex-col items-center justify-center space-y-3  px-4 py-6 pt-8 text-center md:px-16">
           <a href="https://precedent.dev">
             <Image
