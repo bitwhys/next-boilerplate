@@ -41,7 +41,7 @@ export default async function Home() {
         </a>
         <Heading
           size='9'
-          className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-transparent opacity-0 drop-shadow-sm"
+          className="animate-fade-up bg-gradient-to-br from-neutral=12 to-neutral-8 bg-clip-text text-center font-display text-transparent opacity-0 drop-shadow-sm"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           <Balancer>Building blocks for your Next project</Balancer>

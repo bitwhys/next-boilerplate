@@ -9,11 +9,12 @@ interface ProviderProps extends ThemeProviderProps {
   grayColor?: string
   accentColor?: string
   destructiveColor?: string
+  panelBackground?: 'solid' | 'translucent'
   radius?: string
 }
-export function ThemeProvider({ radius = "large",grayColor = "mauve",accentColor = "crimson",destructiveColor,children, ...props }: ProviderProps) {
+export function ThemeProvider({ panelBackground = 'translucent',radius = "large",grayColor = "mauve",accentColor = "crimson",destructiveColor,children, ...props }: ProviderProps) {
   return <NextThemesProvider {...props}>
-    <RadixThemeProvider grayColor={grayColor} accentColor={accentColor} radius={radius}>
+    <RadixThemeProvider panelBackground={panelBackground} grayColor={grayColor} accentColor={accentColor} radius={radius}>
       {children}
     </RadixThemeProvider>
   </NextThemesProvider>

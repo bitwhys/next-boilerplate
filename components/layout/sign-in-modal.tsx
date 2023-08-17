@@ -40,7 +40,7 @@ const SignInModal = ({
           </Text>
         </div>
 
-        <Inset side='bottom' className="flex flex-col space-y-4 border-t border-neutral-7 bg-neutral-3 px-4 py-8 md:px-16">
+        <Inset side='bottom' className="flex flex-col space-y-4 border-t border-neutral-7 bg-neutral-a3 px-4 py-8 md:px-16">
           <Button
             size='3'
             variant='outline'

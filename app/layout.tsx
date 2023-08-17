@@ -34,7 +34,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={cx(sfPro.variable, geliatFont.variable,'font-sans')}>
-      <ThemeProvider>
+      <ThemeProvider >
         <div className="fixed h-screen w-full bg-gradient-to-br from-violet-3 via-white to-primary-8"/>
         <Suspense fallback="...">
           {/* @ts-expect-error Server Component */}
