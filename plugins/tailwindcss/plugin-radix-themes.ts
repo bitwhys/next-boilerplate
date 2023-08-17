@@ -59,3 +59,7 @@ export const createThemeColorUtilities = () => {
   return scales
 
 };
+
+export const createVariableOverrideUtilities = () => {
+  return ({})
+}

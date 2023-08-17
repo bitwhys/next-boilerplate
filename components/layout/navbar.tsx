@@ -42,7 +42,11 @@ export default function NavBar({ session }: { session: Session | null }) {
               <UserDropdown session={session} />
             ) : (
               <Button
-                className="rounded-full"
+                size='3'
+                className="rdx-rounded-full"
+                // variant='outline'
+                highContrast
+                color='gray'
                 onClick={() => setShowSignInModal(true)}
               >
                 Sign In

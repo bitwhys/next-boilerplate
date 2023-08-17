@@ -33,7 +33,7 @@ export interface PluginOptions {
   overridePrefix?: string;
 }
 function createPluginWithOptions(options: PluginOptions = {}) {
-  return function withRadixThemesPlugin({ addBase }) {
+  return function withRadixThemesPlugin({ addBase,addUtilities,theme }) {
     addBase({
       ":root": {
         ...getRadixVariableObject(
@@ -51,7 +51,13 @@ function createPluginWithOptions(options: PluginOptions = {}) {
         "--background": "var(--color-page-background)",
       },
     });
+    addUtilities({
+      '.rdx-rounded-full': {
+        '--radius-full': theme('borderRadius.full')
+      }
+    })
   };
+
 }
 
 export default plugin.withOptions(createPluginWithOptions, extendUserConfig);
