@@ -6,6 +6,7 @@ import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import { nFormatter } from "@/lib/utils";
+import {Heading} from "@radix-ui/themes";
 
 export default async function Home() {
   const { stargazers_count: stars } = await fetch(
@@ -31,19 +32,20 @@ export default async function Home() {
           href="https://twitter.com/steventey/status/1613928948915920896"
           target="_blank"
           rel="noreferrer"
-          className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
+          className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-primary-a9 px-7 py-2 transition-colors hover:bg-blue-200"
         >
-          <Twitter className="h-5 w-5 text-[#1d9bf0]" />
-          <p className="text-sm font-semibold text-[#1d9bf0]">
+          <Twitter className="h-5 w-5 text-white" />
+          <p className="text-sm font-semibold text-white">
             Introducing Precedent
           </p>
         </a>
-        <h1
-          className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
+        <Heading
+          size='9'
+          className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-transparent opacity-0 drop-shadow-sm"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           <Balancer>Building blocks for your Next project</Balancer>
-        </h1>
+        </Heading>
         <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
